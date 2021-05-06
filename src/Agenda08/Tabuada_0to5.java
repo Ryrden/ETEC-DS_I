@@ -1,4 +1,4 @@
-package Agenda8;
+package Agenda08;
 
 public class Tabuada_0to5 {
 

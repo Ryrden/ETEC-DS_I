@@ -1,4 +1,4 @@
-package Agenda7;
+package Agenda07;
 
 public class Sum_0to100 {
 

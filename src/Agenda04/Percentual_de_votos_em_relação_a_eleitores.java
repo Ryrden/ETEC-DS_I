@@ -1,4 +1,4 @@
-package Agenda4;
+package Agenda04;
 
 import java.util.Scanner;
 

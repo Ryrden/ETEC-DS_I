@@ -1,4 +1,4 @@
-package Agenda6;
+package Agenda06;
 
 import javax.swing.JOptionPane;
 
