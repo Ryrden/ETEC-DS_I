@@ -175,33 +175,35 @@
         <h2 class="w3-text-cyan">Docentes</h2>
         <hr style="width: 200px;" class="w3-opacity">
         </hr style>
+        <p>
+            <button class="w3-button w3-text-cyan w3-display-center" onclick="plusDivs(-1)">Voltar &#10094;</button>
+            <button class="w3-button w3-text-cyan w3-display-center" onclick="plusDivs(1)">&#10095; Próximo</button>
+        </p>
 
         <div class="w3-row w3-row-padding">
-            <div class="w3-half">
+            <div class="slides">
                 <i class="fa fa-address-card w3-xxlarge"></i>
 
-                <h3 class="w3-text-cyan w3-margin-bottom">
+                <h3 class="w3-text-cyan">
                     Francisca Amendoa Carvalho
                     <h4 class="w3-text-cyan">Formação Acadêmica</h4>
-                    <p class="">Graduada em Tecnologia em Processamento de Dados pelo Faculdade de São Paulo (1996)
+                    <p>Graduada em Tecnologia em Processamento de Dados pelo Faculdade de São Paulo (1996)
                         <br>Mestre em Ciência da Computação pelo Centro Universitário São Luiz (2018)
                     </p>
                 </h3>
                 <h4 class="w3-text-cyan">Atuação Profissional</h4>
-                <p>
-                    Professora Titular da Faculdade Federal de Edução de Maringa
+                <p>Professora Titular da Faculdade Federal de Edução de Maringa
                     <br>Experiência na área de Educação
                 </p>
             </div>
 
-            <div class="w3-half">
+            <div class="slides">
                 <i class="fa fa-address-card w3-xxlarge"></i>
 
                 <h3 class="w3-text-cyan">
                     Marcio Soares
                     <h4 class="w3-text-cyan">Formação Acadêmica</h4>
-                    <p>
-                        Graduado em Ciência da Computação pela Universidade Federal de São Carlos (2009)
+                    <p>Graduado em Ciência da Computação pela Universidade Federal de São Carlos (2009)
                         <br>Mestre em Ciência da Computação pela Universidade Federal de São Carlos (2017)
                     </p>
                 </h3>
@@ -211,38 +213,85 @@
                     Professor Titular da Faculdade Federal de Edução de Maringa
                     <br>Experiência na área de Educação
                 </p>
+
             </div>
 
+            <div class="slides">
+                <i class="fa fa-address-card w3-xxlarge"></i>
+
+                <h3 class="w3-text-cyan">
+                    Ryan Souza
+                    <h4 class="w3-text-cyan">Formação Acadêmica</h4>
+                    <p>
+                        Graduando em Sistemas de Informações pela Universidade de São Paulo (2025)
+                        <br>Técnico em Mecatrônica pela ETEC Getulio Vargas (2020)
+                    </p>
+                </h3>
+
+                <h4 class="w3-text-cyan">Atuação Profissional</h4>
+                <p>
+                    Aulas para a irmã mais nova.
+                    <br>Experiência na área de Educação
+                </p>
+
+            </div>
+        </div>
     </nav>
 
-    </div>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var cont;
+            var docentes = document.getElementsByClassName("slides");
+            if (n > docentes.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = docentes.length }
+            for (cont = 0; cont < docentes.length; cont++) {
+                docentes[cont].style.display = "none";
+            }
+            docentes[slideIndex - 1].style.display = "block";
+        }
+    </script>
+    </nav>
 
     <div class="w3-padding-64 w3-content w3-" id="mercado">
         <h2 class="w3-text-cyan">Mercado de Trabalho</h2>
         <hr style="width:200px" class="w3-opacity">
         </hr style>
 
-        <p>Segundo o que informa a Associação Brasileira das Empresas de Software (ABES) em parceria com International
+        <p>Segundo o que informa a Associação Brasileira das Empresas de Software (ABES) em parceria com
+            International
             Data Corporation Pesquisa des Mercado e Consultoria Ltda (IDC), em 2016 haverá um crescimento em 3% no
             mercado de Tecnologia da Informação no Brasil.
         </p>
         <p>Outras Associações e Instituições também discursam sobre o constante crescimento da área da Tecnologia da
             Informação (T.I.), como, por exemplo, a Associação Brasileira das Empresas de Tecnologia da Informação e
-            Comunicação (BRASSCOM), que em uma entrevista realizada pelo Jornal da Globo, foi divulgado pelo presidente
-            da empresa, Sérgio Sgobbi, que em 2015 a áreada Tecnologia da Informação (T.I.) registrou uma alta de mais
+            Comunicação (BRASSCOM), que em uma entrevista realizada pelo Jornal da Globo, foi divulgado pelo
+            presidente
+            da empresa, Sérgio Sgobbi, que em 2015 a áreada Tecnologia da Informação (T.I.) registrou uma alta de
+            mais
             de 8% em oportunidades de emprego e a tendência para os demais anos é crescer gradativamente.
         </p>
         <p>Além disso, em apresentação ocorrida durante o seminário “Governo e o setor de TI - Garantia de Inovação,
-            Produtividade e Segurança”, em Brasília, a expectativa era de que no segundo semestre de 2015, o setor de TI
+            Produtividade e Segurança”, em Brasília, a expectativa era de que no segundo semestre de 2015, o setor
+            de TI
             e serviços.
         </p>
-        <p>Essas informações são baseadas em pesquisa feita pelo International Data Corporation (IDC) no mercado de TI
+        <p>Essas informações são baseadas em pesquisa feita pelo International Data Corporation (IDC) no mercado de
+            TI
             do Brasil. Esta mesma pesquisa aponta que a Indústria Brasileira de TI permaneceem 7º lugar no ranking
             mundial e em 1° lugar no Ranking da América Latina em 2015, com um investimento de US$ 2,2trilhões
-            (crescimento em 9,2% em relação a 2014), sendo que US$ 14,3bilhões (crescimento de 8,2%) somente no setor
+            (crescimento em 9,2% em relação a 2014), sendo que US$ 14,3bilhões (crescimento de 8,2%) somente no
+            setor
             Serviços de T.I. e US$ 12,3bilhões (crescimento em 30,2%) no setor de softwares.
         </p>
-        <p>A pesquisa apresentada também trouxe um mapa do investimento em TI no país, no qual a região Sudeste foi a
+        <p>A pesquisa apresentada também trouxe um mapa do investimento em TI no país, no qual a região Sudeste foi
+            a
             que mais teve participação total nos investimentos em hardware, softwaree serviços,com 60, 67%”.
         </p>
 
@@ -296,7 +345,8 @@
             <form>
                 <p><input class="w3-input w3-padding-16" type="text" placeholder="Nome" requiredname="Nome"></p>
                 <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" requiredname="Email"></p>
-                <p><input class="w3-input w3-padding-16" type="text" placeholder="Assunto" requiredname="Assunto"></p>
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Assunto" requiredname="Assunto">
+                </p>
                 <p>
                     <input class="w3-input w3-padding-16" placeholder="Mensagem" requiredname="Mensagem">
                 </p>
