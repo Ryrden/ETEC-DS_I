@@ -16,35 +16,35 @@
     <div class="w3-panel w3-border w3-border-blue">
         <?php
             $nome = $_POST['txtNome'];
-            echo "Nome: ".$nome."<br>";
+            echo "<b>Nome: </b>".$nome."<br>";
         ?>
     </div>
 
     <div class="w3-panel w3-border w3-border-blue">
         <?php
             $sobrenome = $_POST['txtSobrenome'];
-            echo "Sobrenome: ".$sobrenome."<br>";
+            echo "<b>Sobrenome: </b>".$sobrenome."<br>";
         ?>
     </div>
 
     <div class="w3-panel w3-border w3-border-blue">
         <?php
             $email = $_POST['txtEmail'];
-            echo "Email: ".$email."<br>";
+            echo "<b>Email: </b>".$email."<br>";
         ?>
     </div>
 
     <div class="w3-panel w3-border w3-border-blue">
         <?php
             $formacao = $_POST['txtFormacao'];
-            echo "Formação: ".$formacao."<br>";
+            echo "<b>Formação: </b>".$formacao."<br>";
         ?>
     </div>
 
     <div class="w3-panel w3-border w3-border-blue">
         <?php
             $descricao = $_POST['txtEmprego'];
-            echo "Descrição Último Emprego: ".$descricao."<br>";
+            echo "<b>Descrição Último Emprego: </b>".$descricao."<br>";
         ?>
     </div>
     
