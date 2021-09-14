@@ -1,0 +1,36 @@
+body{
+    background-color: #2b2d42;
+}
+
+#Titulo{
+    text-align: center;
+    color: #edf2f4;
+    font-size: 4.5em;
+}
+
+.titles{
+    display: flex;
+    justify-content: space-between;
+}
+
+.titles h2{
+    width: 20%;
+    text-align: center;
+    color: orange;
+}
+
+.images{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.images div{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.images div img{
+    width: 250px;
+    padding-bottom: 0.5em;
+}
