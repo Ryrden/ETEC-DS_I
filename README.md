@@ -1,10 +1,10 @@
 # Conteúdo aprendido
 
     -Java
-    -HTML
+    -HTML 
     -CSS
     -Framework W3 para CSS
-    -Javascript
+    -Javascript Basic
     
     
    **Conteúdo separado por aula:**
